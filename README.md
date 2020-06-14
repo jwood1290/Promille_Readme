@@ -43,7 +43,7 @@ The variables under **[LOGS]** are files that will be created during runtime to 
 
 The variables under **[TOKEN]** are as follows:
 <pre>
-- ID:				This is the token ID that will be exchanged. The default is PI (1002884)
+- ID:			This is the token ID that will be exchanged. The default is PI (1002884)
 - PRECISION:		This is the token's precision (will multiply the token amount sent by 10^PRECISION).
 - PURCHASE_RATIO:	This is the exchange rate of TRX to tokens. The default is 1 (1 token for every 1 TRX).
 - PURCHASE_MIN:		The minimum amount of tokens that can be exchanged. The default is 1.
@@ -55,8 +55,8 @@ The variables under **[API]** are the urls/IP addresses for the Tron full node, 
 The variables under **[BOT]** are as follows:
 
 <pre>
-- BOT_PK:				The exchange bot's private key
-- BOT_ADDR:				The exchange bot's address
+- BOT_PK:		The exchange bot's private key
+- BOT_ADDR:		The exchange bot's address
 </pre>
 
 ## Usage
@@ -68,13 +68,13 @@ Command line arguments' details can be found by using the "-h" or "--help" optio
 Here is a breakdown of the other command line options:
 
 <pre>
--h or --help        Displays these command line arguments.
--c or --continue    Continue Mode: Disables log reset so the exchange bot can continue where it left off
--t or --test        Test Mode: Will do everything except send transactions
--o or --offline     Offline Mode: Will only keep local files. Disables uploads to MongoDB
--s or --silent      Silent Mode: Will only write errors and warnings to log
--d or --debug       Debug Mode: Will output extra debugging information to log
--k or --kill        Kills any running process without starting a new one
+-h or --help            Displays these command line arguments.
+-c or --continue        Continue Mode: Disables log reset so the exchange bot can continue where it left off
+-t or --test            Test Mode: Will do everything except send transactions
+-o or --offline         Offline Mode: Will only keep local files. Disables uploads to MongoDB
+-s or --silent          Silent Mode: Will only write errors and warnings to log
+-d or --debug           Debug Mode: Will output extra debugging information to log
+-k or --kill            Kills any running process without starting a new one
 </pre>
 
 The above command will run the script as a background process, so you do not need to keep the console open after starting. If you do not want the script to run as a background process (and write to a log file), then do not use the [shell start script](/start.sh). Instead, just run the [Python script](/pi_exchange.py) directly using the same command line arguments above:
